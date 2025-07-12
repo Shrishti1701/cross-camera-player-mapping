@@ -78,7 +78,7 @@ If I had more time/resources, I would:
 
 ## Completion Status
 
-✅ All main objectives achieved:
+  All main objectives achieved:
 - Player detection performed successfully on both videos.
 - Feature embeddings extracted for all detected players.
 - Matching between tacticam and broadcast views completed and results saved.
