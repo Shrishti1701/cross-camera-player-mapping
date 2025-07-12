@@ -43,14 +43,14 @@ cross-camera-player-mapping/
 
 ### 1. Clone the Repository
 
-```bash
+```
 git clone https://github.com/your-username/cross-camera-player-mapping.git
 cd cross-camera-player-mapping
 ```
 
 ### 2. Install Dependencies
 We recommend Python ≥ 3.9.
-```bash
+```
 pip install -r requirements.txt
 ```
 
@@ -66,7 +66,7 @@ pandas
 ### 3. Download YOLO Weights
 Download the YOLOv8 model from:
 
-```bash
+```
 https://drive.google.com/file/d/1-5fOSHOSB9UXyP_enOoZNAMScrePVCMD/view
 ```
 Place the weights file (e.g. yolov8n.pt) into the repo directory.
@@ -74,7 +74,7 @@ Place the weights file (e.g. yolov8n.pt) into the repo directory.
 ### 4. Run Detection
 Run detection on both videos to produce player crops:
 
-```bash
+```
 python scripts/detect_players.py --video broadcast.mp4 --output_dir detections_broadcast
 python scripts/detect_players.py --video tacticam.mp4 --output_dir detections_tacticam
 ```
@@ -82,14 +82,14 @@ python scripts/detect_players.py --video tacticam.mp4 --output_dir detections_ta
 ### 5. Extract Features
 Generate feature embeddings for each crop:
 
-```bash
+```
 python scripts/extract_features.py
 ```
 
 ### 6. Match Players
 Run matching to produce the similarity matrix and generate matched pairs:
 
-```bash
+```
 python scripts/match_players.py
 ```
 Results will be saved as:
@@ -99,7 +99,7 @@ matched_players.csv
 ### 7. Visualize Matches (Optional)
 To plot matched pairs side-by-side:
 
-```bash
+```
 python scripts/visualize_matches.py
 ```
 
