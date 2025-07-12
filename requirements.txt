@@ -1,0 +1,37 @@
+# Core Deep Learning Libraries
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Re-Identification (ReID) models
+torchreid>=1.4.0
+
+# YOLOv8 detection
+ultralytics>=8.0.0
+
+# Data Science & ML
+numpy>=1.23.0
+scikit-learn>=1.2.0
+pandas>=2.0.0
+
+# Image I/O and plotting
+opencv-python>=4.8.0
+matplotlib>=3.7.0
+Pillow>=9.5.0
+
+# Progress bar for convenience
+tqdm>=4.65.0
+
+### Why These Libraries?
+torch, torchvision → Core PyTorch for models, tensors, etc.
+torchreid → For extracting feature embeddings from crops.
+ultralytics → YOLOv8 detections.
+scikit-learn → Cosine similarity computation.
+pandas → For managing CSVs and dataframes.
+opencv-python → Reading/writing images, video processing.
+matplotlib → Visualizing matches.
+Pillow → Additional image I/O support.
+tqdm → Progress bars in loops.
+
+How to Install
+Once you’ve saved this file as requirements.txt:
+pip install -r requirements.txt
