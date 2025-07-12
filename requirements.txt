@@ -20,19 +20,3 @@ Pillow>=9.5.0
 
 # Progress bar for convenience
 tqdm>=4.65.0
-
-### Why These Libraries?
-torch, torchvision → Core PyTorch for models, tensors, etc.
-torchreid → For extracting feature embeddings from crops.
-ultralytics → YOLOv8 detections.
-scikit-learn → Cosine similarity computation.
-pandas → For managing CSVs and dataframes.
-opencv-python → Reading/writing images, video processing.
-matplotlib → Visualizing matches.
-Pillow → Additional image I/O support.
-tqdm → Progress bars in loops.
-
-How to Install
-Once you’ve saved this file as requirements.txt:
-pip install -r requirements.txt
-
