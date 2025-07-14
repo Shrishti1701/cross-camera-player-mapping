@@ -24,12 +24,14 @@ cross-camera-player-mapping/
 ├── features_tacticam.pkl # Extracted features for tacticam crops
 │
 ├── matched_players.pkl # Saved matching results
-├── matched_players.csv # CSV export of matching results
 │
 ├── scripts/
-│ ├── detect_players.py # Runs YOLOv8 detection on videos
-│ ├── extract_features.py # Extracts embeddings from crops
-│ ├── match_players.py # Computes similarity and matches players
+│ ├── detection_inference.py # Runs YOLOv8 detection on videos
+│ ├── Cross-video matching.py
+│ ├── yolo_both_vdo.py
+│ ├── feature_extraction_broadcast.py # Extracts embeddings from crops
+│ ├── feature_extraction_tacticam.py # Extracts embeddings from crops
+│ ├── filter_sort_csv_matches.py # Computes similarity and matches players
 │ ├── visualize_matches.py # Plots visual examples of matched players
 │
 ├── requirements.txt # Python dependencies
