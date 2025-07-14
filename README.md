@@ -17,26 +17,26 @@ Given two clips (`broadcast.mp4` and `tacticam.mp4`) of the same gameplay from d
 ### 🛠️ Project Structure
 cross-camera-player-mapping/
 │
-├── detections_broadcast/ # Cropped player images from broadcast.mp4
-├── detections_tacticam/ # Cropped player images from tacticam.mp4
+├── detections_broadcast_img/         # Cropped player images from broadcast.mp4
+├── detections_tacticam_img/          # Cropped player images from tacticam.mp4
 │
-├── features_broadcast.pkl # Extracted features for broadcast crops
-├── features_tacticam.pkl # Extracted features for tacticam crops
-│
-├── matched_players.pkl # Saved matching results
+├── results/
+│   └── matched_players.pkl           # Saved matching results
 │
 ├── scripts/
-│ ├── detection_inference.py # Runs YOLOv8 detection on videos
-│ ├── Cross-video matching.py
-│ ├── yolo_both_vdo.py
-│ ├── feature_extraction_broadcast.py # Extracts embeddings from crops
-│ ├── feature_extraction_tacticam.py # Extracts embeddings from crops
-│ ├── filter_sort_csv_matches.py # Computes similarity and matches players
-│ ├── visualize_matches.py # Plots visual examples of matched players
+│   ├── detection_inference.py        # Runs YOLOv8 detection on videos
+│   ├── cross_video_matching.py       
+│   ├── yolo_both_vdo.py
+│   ├── feature_extraction_broadcast.py  # Extracts embeddings from broadcast crops
+│   ├── feature_extraction_tacticam.py   # Extracts embeddings from tacticam crops
+│   ├── filter_sort_csv_matches.py    # Computes similarity and matches players
+│   └── visualize_matches.py          # Plots visual examples of matched players
 │
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── ...  
+├── requirements.txt                  # Python dependencies
+├── README.md                         # Project documentation
+├── report.md                         # A brief report of the project
+└── yolov8n.pt                        # YOLO weights model file
+
 
 
 ---
