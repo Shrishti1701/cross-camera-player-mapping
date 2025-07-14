@@ -51,10 +51,10 @@ Given two clips (`broadcast.mp4` and `tacticam.mp4`) of the same sports game fro
 
 ### Runtime Performance
 
--Feature extraction (broadcast): ~2 seconds for 132 images
--Feature extraction (tacticam): ~3 seconds for 201 images
--Matching all pairs: ~0.5 seconds
--Total pipeline runtime: ~5–6 seconds on Intel i5 CPU
+- Feature extraction (broadcast): ~2 seconds for 132 images
+- Feature extraction (tacticam): ~3 seconds for 201 images
+- Matching all pairs: ~0.5 seconds
+- Total pipeline runtime: ~5–6 seconds on Intel i5 CPU
 
 The pipeline processes ~200 players per camera in under 10 seconds, making it suitable for small to medium sports video datasets.
 
